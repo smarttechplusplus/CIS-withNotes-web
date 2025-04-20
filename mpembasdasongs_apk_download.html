@@ -96,15 +96,15 @@
     <p class="lead">Get the latest version of Mpemba SDASongs for Android. Install it easily with the steps below.</p>
 
     <!-- Download button1 -->
-    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs1.apk" class="btn-download" id="downloadBtn" download>
+    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs1.apk" class="btn-download" id="downloadBtn1" download>
       ⬇️ Download APK1
     </a>
     <!-- Download button2 -->
-    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs2.apk" class="btn-download" id="downloadBtn" download>
+    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs2.apk" class="btn-download" id="downloadBtn2" download>
       ⬇️ Download APK2
     </a>
     <!-- Download button3 -->
-    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs3.apk" class="btn-download" id="downloadBtn" download>
+    <a href="https://github.com/madalitsolindadi/mpemba_sda_songs_app/releases/download/v1.0.0/Mpemba.SDASongs3.apk" class="btn-download" id="downloadBtn3" download>
       ⬇️ Download APK3
     </a>
 
@@ -128,9 +128,27 @@
 
   <script>
     // JavaScript to confirm download action (optional)
-    const downloadBtn = document.getElementById('downloadBtn');
+    const downloadBtn1 = document.getElementById('downloadBtn1');
+    const downloadBtn2 = document.getElementById('downloadBtn2');
+    const downloadBtn3 = document.getElementById('downloadBtn3');
 
-    downloadBtn.addEventListener('click', function(event) {
+    downloadBtn1.addEventListener('click', function(event) {
+      const userConfirmed = confirm(
+        "You are about to download an APK file. Are you sure you want to continue?"
+      );
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+    downloadBtn2.addEventListener('click', function(event) {
+      const userConfirmed = confirm(
+        "You are about to download an APK file. Are you sure you want to continue?"
+      );
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+    downloadBtn3.addEventListener('click', function(event) {
       const userConfirmed = confirm(
         "You are about to download an APK file. Are you sure you want to continue?"
       );
