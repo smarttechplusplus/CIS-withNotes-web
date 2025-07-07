@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download MySong Book APK v1.0.0</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      background: #f4f7fc;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.2em;
+      color: #004aad;
+    }
+    p.lead {
+      color: #666;
+      margin-bottom: 2em;
+      font-size: 1.1em;
+    }
+    .btn-download {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.15em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 2em;
+    }
+    .btn-download:hover,
+    .btn-download:focus {
+      background: #00327a;
+      outline: none;
+    }
+    .instructions {
+      text-align: left;
+      font-size: 1em;
+      color: #333;
+      line-height: 1.6;
+    }
+    .instructions h2 {
+      margin-bottom: 0.5em;
+      color: #004aad;
+    }
+    .instructions ol {
+      padding-left: 1.2em;
+      margin-top: 0;
+    }
+    .footer-note {
+      margin-top: 2em;
+      font-size: 0.85em;
+      color: #999;
+    }
+    @media (max-width: 400px) {
+      .container {
+        padding: 20px 15px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .btn-download {
+        width: 100%;
+        padding: 14px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Download MySong Book APK v1.0.0</h1>
+    <p class="lead">Get the latest version of  MySong BookApp for Android. Install it easily with the steps below.</p>
+
+
+    <!-- Installation Instructions -->
+    <section class="instructions" aria-labelledby="instructions-title">
+      <h2 id="instructions-title">Installation Instructions</h2>
+      <ol>
+        <li>Tap one of the download buttons below to save the APK file to your device.</li>
+        <li>If prompted, allow your browser to download files.</li>
+        <li>Open the APK file from your device’s notification bar or file manager.</li>
+        <li>If this is your first time installing from unknown sources, enable <strong>Install Unknown Apps</strong> for your browser in Settings.</li>
+        <li>Proceed with the installation by following the on-screen prompts.</li>
+        <li>If <strong>App not installed</strong>; try another one of the three APKs below. At least one will be compatible with your Android device.</li>
+      </ol>
+    </section>
+    <!-- Download button1 -->
+    <a href="https://github.com/madalitsolindadi/SmartTech-Plus-Plus-website/releases/download/V1/MyGroup_Bank1.apk" class="btn-download" id="downloadBtn1" download>
+      ⬇️ Download APK1 (19.7 MB)
+    </a>
+    <!-- Download button2 -->
+    <a href="https://github.com/madalitsolindadi/SmartTech-Plus-Plus-website/releases/download/V1/MyGroup_Bank2.apk" class="btn-download" id="downloadBtn2" download>
+      ⬇️ Download APK2 (21.8 MB)
+    </a>
+    <!-- Download button3 -->
+    <a href="https://github.com/madalitsolindadi/SmartTech-Plus-Plus-website/releases/download/V1/MyGroup_Bank3.apk" class="btn-download" id="downloadBtn3" download>
+      ⬇️ Download APK3 (22.9 MB)
+    </a>
+
+    <p class="footer-note">
+      ⚠️ Remember to only download APKs from trusted sources. For security, we recommend scanning the file before installation.
+    </p>
+  </main>
+
+  <script>
+    // JavaScript to confirm download action (optional)
+    const downloadBtn1 = document.getElementById('downloadBtn1');
+    const downloadBtn2 = document.getElementById('downloadBtn2');
+    const downloadBtn3 = document.getElementById('downloadBtn3');
+
+    downloadBtn1.addEventListener('click', function(event) {
+      const userConfirmed = confirm(
+        "You are about to download an APK file. Are you sure you want to continue?"
+      );
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+    downloadBtn2.addEventListener('click', function(event) {
+      const userConfirmed = confirm(
+        "You are about to download an APK file. Are you sure you want to continue?"
+      );
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+    downloadBtn3.addEventListener('click', function(event) {
+      const userConfirmed = confirm(
+        "You are about to download an APK file. Are you sure you want to continue?"
+      );
+      if (!userConfirmed) {
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
