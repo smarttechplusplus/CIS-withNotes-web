@@ -97,6 +97,16 @@
       background: #00327a;
       outline: none;
     }
+    /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+    .instructions {
+      text-align: left;
+      font-size: 1em;
+      color: white;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+}
     .instructions {
       text-align: left;
       font-size: 1em;
