@@ -10,6 +10,58 @@
     * {
       box-sizing: border-box;
     }
+     /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+   .instructions ol {
+      padding-left: 1.2em;
+      margin-top: 0;
+      transition: background-color 0.3s, color 0.3s;
+      color: white;
+    }
+
+}
+
+     /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  .container {
+      max-width: 480px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+}
+     /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  p.lead{
+      color: white;
+      margin-bottom: 2em;
+      font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+    }
+}
+     /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  p{
+      color: white;
+      transition: background-color 0.3s, color 0.3s;
+    
+    }
+}
+     /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+   .instructions {
+      text-align: left;
+      font-size: 1em;
+      color: white;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+}
        /* Dark theme styles applied when system prefers dark mode */
 @media (prefers-color-scheme: dark) {
   body {
@@ -25,42 +77,7 @@
     color: white;
     transition: background-color 0.3s, color 0.3s;
   }
-  .instructions ol {
-      padding-left: 1.2em;
-      margin-top: 0;
-      transition: background-color 0.3s, color 0.3s;
-      color: white;
-    }
 
-  .instructions {
-      text-align: left;
-      font-size: 1em;
-      color: white;
-      line-height: 1.6;
-      transition: background-color 0.3s, color 0.3s;
-    }
-  p{
-      color: white;
-      transition: background-color 0.3s, color 0.3s;
-    
-    }
-   p.lead{
-      color: white;
-      margin-bottom: 2em;
-      font-size: 1.1em;
-    transition: background-color 0.3s, color 0.3s;
-    }
-   .container {
-      max-width: 480px;
-      width: 100%;
-      background-color: black;
-      color: white;
-      border-radius: 12px;
-      padding: 30px 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: background-color 0.3s, color 0.3s;
-    }
 }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
