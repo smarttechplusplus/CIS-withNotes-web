@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="color-scheme" content="light dark" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About SDA Database App</title>
@@ -20,6 +21,7 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
     }
     /* Dark theme styles applied when system prefers dark mode */
 @media (prefers-color-scheme: dark) {
@@ -34,6 +36,7 @@
       padding: 20px;
     background-color: black;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
   }
 }
     .container {
@@ -44,7 +47,22 @@
       padding: 30px 25px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
+      transition: background-color 0.3s, color 0.3s;
     }
+    /* Dark theme styles applied when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+    .container {
+      max-width: 480px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+}
     h1, h2, h3, a {
       margin-bottom: 0em;
       color: #004aad;
