@@ -101,6 +101,32 @@
         padding: 14px 0;
       }
     }
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #121212;
+        color: #e0e0e0;
+      }
+      .container {
+        background: #1e1e1e;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+      }
+      h1, .instructions h2 {
+        color: #3399ff;
+      }
+      p.lead, .instructions, .footer-note {
+        color: #c0c0c0;
+      }
+      .btn-download {
+        background: #3399ff;
+        color: #121212;
+      }
+      .btn-download:hover,
+      .btn-download:focus {
+        background: #1a6ed8;
+        color: #f0f0f0;
+      }
+    }
   </style>
 </head>
 <body>
